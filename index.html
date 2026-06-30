@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Marie-Angélique Pied | Développeuse Full Stack</title>
 
+    <meta name="description" content="Portfolio de Marie-Angélique Pied, développeuse full stack en reconversion.">
+
+    <link rel="icon" href="favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
@@ -22,11 +24,136 @@
 </head>
 
 <body>
-<h1>Bienvenue sur mon portfolio</h1>
 
-<p>Premier test avec les polices.</p>
+    <!-- ============ EN-TÊTE / NAVIGATION ============ -->
+    <header class="site-header">
+
+        <nav class="nav" aria-label="Navigation principale">
+
+            <a href="#hero" class="nav__logo">MAP</a>
+
+            <ul class="nav__links">
+                <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <div class="nav__actions">
+
+                <!-- Bascule de langue FR / EN -->
+                <button type="button" id="lang-toggle" class="btn-icon" aria-label="Changer de langue">
+                    <span data-lang-label>EN</span>
+                </button>
+
+                <!-- Bascule de thème clair / sombre -->
+                <button type="button" id="theme-toggle" class="btn-icon" aria-label="Changer de thème">
+                    <span aria-hidden="true">🌙</span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <section id="hero" class="hero">
+            <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
+            <p class="hero__tagline" data-i18n="hero.tagline"></p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
+                <a href="assets/cv.pdf" class="btn btn--ghost" download data-i18n="hero.cta_cv">Télécharger mon CV</a>
+            </div>
+        </section>
+
+        <!-- ============ À PROPOS ============ -->
+        <section id="about" class="about">
+            <h2 data-i18n="about.title">À propos</h2>
+            <div class="about__content">
+                <p data-i18n="about.body"></p>
+            </div>
+        </section>
+
+        <!-- ============ PROJETS ============ -->
+        <section id="projects" class="projects">
+
+            <h2 data-i18n="projects.title">Projets</h2>
+
+            <div class="projects__grid">
+
+                <!-- Projet 1 : Ti Moun (plateforme garde d'enfants) -->
+                <article class="project-card">
+                    <h3 class="project-card__title">Ti Moun</h3>
+                    <p class="project-card__status" data-i18n="projects.timoun.status">En développement</p>
+                    <p class="project-card__desc" data-i18n="projects.timoun.desc"></p>
+                    <ul class="project-card__tech" aria-label="Technologies">
+                        <!-- TODO : technos à confirmer -->
+                    </ul>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link" data-i18n="projects.link_code">Code</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 : Noread (suivi de lecture) -->
+                <article class="project-card">
+                    <h3 class="project-card__title">Noread</h3>
+                    <p class="project-card__status" data-i18n="projects.noread.status">Déployé</p>
+                    <p class="project-card__desc" data-i18n="projects.noread.desc"></p>
+                    <ul class="project-card__tech" aria-label="Technologies">
+                        <li>React</li>
+                        <li>Supabase</li>
+                        <li>PWA</li>
+                    </ul>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link" data-i18n="projects.link_demo">Démo</a>
+                        <a href="#" class="project-card__link" data-i18n="projects.link_code">Code</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 : Trivy (assistant valise) -->
+                <article class="project-card">
+                    <h3 class="project-card__title">Trivy</h3>
+                    <p class="project-card__status" data-i18n="projects.trivy.status">En développement</p>
+                    <p class="project-card__desc" data-i18n="projects.trivy.desc"></p>
+                    <ul class="project-card__tech" aria-label="Technologies">
+                        <li>Laravel</li>
+                    </ul>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link" data-i18n="projects.link_code">Code</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact">
+            <h2 data-i18n="contact.title">Contact</h2>
+            <p data-i18n="contact.body"></p>
+            <ul class="contact__links">
+                <li><a href="mailto:m.angelique.pied@gmail.com">Email</a></li>
+                <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ============ PIED DE PAGE ============ -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Marie-Angélique Pied</p>
+    </footer>
+
+    <!-- Traductions chargées depuis lang/fr.json et lang/en.json -->
+    <script src="js/theme.js" defer></script>
+    <script src="js/language.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/app.js" defer></script>
+
 </body>
-
-<script src="js/app.js"></script>
 
 </html>
