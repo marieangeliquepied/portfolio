@@ -34,6 +34,12 @@ ol {
     list-style: none;
 }
 
+/* L'attribut [hidden] doit toujours masquer, même si une règle de classe
+   redéfinit display (ex. .btn-icon { display: grid }) */
+[hidden] {
+    display: none !important;
+}
+
 a {
     color: inherit;
     text-decoration: none;

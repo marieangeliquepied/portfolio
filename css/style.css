@@ -198,6 +198,43 @@ section > h2::after {
     color: var(--text-light);
 }
 
+/* ---------- Compétences ---------- */
+
+.skills__groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-md);
+}
+
+.skill-group {
+    padding: var(--space-md);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.skill-group__title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+
+.skill-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-group__list li {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    color: var(--text);
+    background: var(--primary-soft);
+}
+
 /* ---------- Projets ---------- */
 
 .projects__grid {
