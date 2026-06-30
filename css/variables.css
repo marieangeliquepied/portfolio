@@ -1,0 +1,25 @@
+:root {
+
+    /* Couleurs */
+
+    --primary: #EC4899;
+    --primary-dark: #DB2777;
+
+    --background: #FFF9FC;
+    --surface: #FFFFFF;
+
+    --text: #111827;
+    --text-light: #6B7280;
+
+    /* Typographie */
+
+    --title-font: "Manrope", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+    /* Taille */
+
+    --radius: 20px;
+
+    --transition: .3s ease;
+
+}
