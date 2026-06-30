@@ -72,8 +72,35 @@
 
         <!-- ============ HERO ============ -->
         <section id="hero" class="hero">
-            <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
-            <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
+
+            <div class="hero__intro">
+
+                <!-- Avatar : déposer le fichier dans assets/img/avatar.png.
+                     onerror masque l'image proprement tant qu'elle n'existe pas. -->
+                <img class="hero__avatar"
+                     src="assets/img/avatar.png"
+                     alt="Portrait illustré de Marie-Angélique Pied"
+                     width="132" height="132"
+                     loading="eager"
+                     onerror="this.style.display='none'">
+
+                <div class="hero__heading">
+                    <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
+                    <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
+                    <p class="hero__meta">
+                        <span class="hero__location">
+                            <span aria-hidden="true">📍</span> Martinique
+                        </span>
+                        <span class="hero__clock">
+                            <span aria-hidden="true">🕐</span>
+                            <time id="local-time">--:--</time>
+                            <span data-i18n="hero.localtime">heure locale</span>
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
             <p class="hero__tagline" data-i18n="hero.tagline">Je conçois des applications web complètes, du design de l'interface à la logique serveur.</p>
             <div class="hero__actions">
                 <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>

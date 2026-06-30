@@ -22,6 +22,16 @@
         display: none;
     }
 
+    /* Avatar un peu plus compact et aligné avec le titre sur petit écran */
+    .hero__intro {
+        gap: var(--space-sm);
+    }
+
+    .hero__avatar {
+        width: 76px;
+        height: 76px;
+    }
+
     .hero__actions {
         width: 100%;
     }
