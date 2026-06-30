@@ -62,7 +62,7 @@
         <section id="hero" class="hero">
             <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
             <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
-            <p class="hero__tagline" data-i18n="hero.tagline"></p>
+            <p class="hero__tagline" data-i18n="hero.tagline">En reconversion vers le développement web, je conçois des applications complètes — du design de l'interface à la logique serveur.</p>
             <div class="hero__actions">
                 <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
                 <a href="assets/cv.pdf" class="btn btn--ghost" download data-i18n="hero.cta_cv">Télécharger mon CV</a>
@@ -73,7 +73,8 @@
         <section id="about" class="about">
             <h2 data-i18n="about.title">À propos</h2>
             <div class="about__content">
-                <p data-i18n="about.body"></p>
+                <p data-i18n="about.body1">Après un premier parcours professionnel, j'ai choisi de me reconvertir dans le développement web, par goût de comprendre comment les choses fonctionnent et de construire des outils utiles de bout en bout.</p>
+                <p data-i18n="about.body2">Je travaille aujourd'hui sur des applications full stack modernes — React et Next.js côté interface, Node, Laravel et Supabase côté données. J'aime le code soigné, les interfaces claires et les projets qui ont du sens.</p>
             </div>
         </section>
 
@@ -88,12 +89,16 @@
                 <article class="project-card">
                     <h3 class="project-card__title">Ti Moun</h3>
                     <p class="project-card__status" data-i18n="projects.timoun.status">En développement</p>
-                    <p class="project-card__desc" data-i18n="projects.timoun.desc"></p>
+                    <p class="project-card__desc" data-i18n="projects.timoun.desc">Plateforme de mise en relation entre parents et professionnels de la garde d'enfants : recherche, profils, réservation et messagerie, avec authentification sécurisée.</p>
                     <ul class="project-card__tech" aria-label="Technologies">
-                        <!-- TODO : technos à confirmer -->
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Supabase</li>
+                        <li>Vercel</li>
                     </ul>
                     <div class="project-card__links">
-                        <a href="#" class="project-card__link" data-i18n="projects.link_code">Code</a>
+                        <a href="https://github.com/marieangeliquepied/ti-moun" class="project-card__link" target="_blank" rel="noopener" data-i18n="projects.link_code">Code</a>
                     </div>
                 </article>
 
@@ -101,7 +106,7 @@
                 <article class="project-card">
                     <h3 class="project-card__title">Noread</h3>
                     <p class="project-card__status" data-i18n="projects.noread.status">Déployé</p>
-                    <p class="project-card__desc" data-i18n="projects.noread.desc"></p>
+                    <p class="project-card__desc" data-i18n="projects.noread.desc">Application de suivi de lecture installable (PWA) : bibliothèque personnelle, progression et statistiques, synchronisées en temps réel.</p>
                     <ul class="project-card__tech" aria-label="Technologies">
                         <li>React</li>
                         <li>Supabase</li>
@@ -117,7 +122,7 @@
                 <article class="project-card">
                     <h3 class="project-card__title">Trivy</h3>
                     <p class="project-card__status" data-i18n="projects.trivy.status">En développement</p>
-                    <p class="project-card__desc" data-i18n="projects.trivy.desc"></p>
+                    <p class="project-card__desc" data-i18n="projects.trivy.desc">Assistant de voyage qui aide à préparer sa valise : listes intelligentes selon la destination, la durée du séjour et la météo.</p>
                     <ul class="project-card__tech" aria-label="Technologies">
                         <li>Laravel</li>
                     </ul>
@@ -133,10 +138,11 @@
         <!-- ============ CONTACT ============ -->
         <section id="contact" class="contact">
             <h2 data-i18n="contact.title">Contact</h2>
-            <p data-i18n="contact.body"></p>
+            <p data-i18n="contact.body">Un projet, une opportunité, ou simplement l'envie d'échanger ? Écrivez-moi, je réponds avec plaisir.</p>
             <ul class="contact__links">
                 <li><a href="mailto:m.angelique.pied@gmail.com">Email</a></li>
-                <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://github.com/marieangeliquepied" target="_blank" rel="noopener">GitHub</a></li>
+                <!-- TODO : URL LinkedIn à compléter -->
                 <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
         </section>
