@@ -73,39 +73,42 @@
         <!-- ============ HERO ============ -->
         <section id="hero" class="hero">
 
-            <div class="hero__intro">
+            <div class="hero__text">
 
-                <!-- Avatar : déposer le fichier dans assets/img/avatar.png.
-                     onerror masque l'image proprement tant qu'elle n'existe pas. -->
-                <img class="hero__avatar"
-                     src="assets/img/avatar.png"
-                     alt="Portrait illustré de Marie-Angélique Pied"
-                     width="132" height="132"
-                     loading="eager"
-                     onerror="this.style.display='none'">
+                <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
+                <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
 
-                <div class="hero__heading">
-                    <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
-                    <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
-                    <p class="hero__meta">
-                        <span class="hero__location">
-                            <span aria-hidden="true">📍</span> Martinique
-                        </span>
-                        <span class="hero__clock">
-                            <span aria-hidden="true">🕐</span>
-                            <time id="local-time">--:--</time>
-                            <span data-i18n="hero.localtime">heure locale</span>
-                        </span>
-                    </p>
+                <p class="hero__meta">
+                    <span class="hero__location">
+                        <!-- Drapeau de la Martinique (rouge-vert-noir) -->
+                        <svg class="flag-mq" viewBox="0 0 24 16" width="22" height="15" role="img" aria-label="Drapeau de la Martinique" focusable="false">
+                            <rect width="24" height="8" fill="#009639"/>
+                            <rect y="8" width="24" height="8" fill="#111111"/>
+                            <polygon points="0,0 0,16 11,8" fill="#CE1126"/>
+                        </svg>
+                        Martinique
+                    </span>
+                </p>
+
+                <p class="hero__tagline" data-i18n="hero.tagline">Je conçois des applications web complètes, du design de l'interface à la logique serveur.</p>
+
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
+                    <a href="assets/cv/CV_DEV_Marie-Angélique%20Pied.pdf" class="btn btn--ghost" download="CV-Marie-Angelique-Pied.pdf" data-i18n="hero.cta_cv">Télécharger mon CV</a>
                 </div>
 
             </div>
 
-            <p class="hero__tagline" data-i18n="hero.tagline">Je conçois des applications web complètes, du design de l'interface à la logique serveur.</p>
-            <div class="hero__actions">
-                <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
-                <a href="assets/cv/CV_DEV_Marie-Angélique%20Pied.pdf" class="btn btn--ghost" download="CV-Marie-Angelique-Pied.pdf" data-i18n="hero.cta_cv">Télécharger mon CV</a>
+            <div class="hero__portrait">
+                <!-- Avatar : assets/img/avatar.png — masqué proprement si absent -->
+                <img class="hero__avatar"
+                     src="assets/img/avatar.png"
+                     alt="Portrait illustré de Marie-Angélique Pied"
+                     width="280" height="280"
+                     loading="eager"
+                     onerror="this.style.display='none'">
             </div>
+
         </section>
 
         <!-- ============ À PROPOS ============ -->
