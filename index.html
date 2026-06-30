@@ -21,6 +21,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Anti-flash : pose le thème sur <html> avant le premier rendu -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem("theme");
+            var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            var theme = saved || (prefersDark ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -138,6 +148,7 @@
             <ul class="contact__links">
                 <li><a href="mailto:m.angelique.pied@gmail.com">Email</a></li>
                 <li><a href="https://www.linkedin.com/in/marieangeliquepied" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/marieangeliquepied" target="_blank" rel="noopener">GitHub</a></li>
             </ul>
         </section>
 

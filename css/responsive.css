@@ -1,0 +1,37 @@
+/* ============================================================
+   RESPONSIVE — adaptations mobile / tablette
+   ============================================================ */
+
+/* Tablette et en-dessous */
+@media (max-width: 768px) {
+
+    main > section {
+        padding-block: var(--space-lg);
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+
+    /* On masque les liens d'ancrage, on garde les bascules thème/langue */
+    .nav__links {
+        display: none;
+    }
+
+    .hero__actions {
+        width: 100%;
+    }
+
+    .hero__actions .btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+}

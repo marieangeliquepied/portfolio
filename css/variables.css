@@ -1,25 +1,51 @@
+/* ============================================================
+   VARIABLES — jetons de design (couleurs, typo, espacements)
+   ============================================================ */
+
 :root {
 
-    /* Couleurs */
-
+    /* --- Palette rose (commune aux deux thèmes) --- */
     --primary: #EC4899;
     --primary-dark: #DB2777;
+    --primary-soft: rgba(236, 72, 153, 0.12);
 
+    /* --- Thème CLAIR (par défaut) --- */
     --background: #FFF9FC;
     --surface: #FFFFFF;
 
     --text: #111827;
     --text-light: #6B7280;
 
-    /* Typographie */
+    --border: rgba(17, 24, 39, 0.08);
+    --shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
 
+    /* --- Typographie --- */
     --title-font: "Manrope", sans-serif;
     --body-font: "Inter", sans-serif;
 
-    /* Taille */
+    /* --- Échelle d'espacement --- */
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
 
+    /* --- Divers --- */
+    --max-width: 1100px;
     --radius: 20px;
+    --radius-sm: 12px;
+    --transition: 0.3s ease;
+}
 
-    --transition: .3s ease;
+/* --- Thème SOMBRE --- */
+[data-theme="dark"] {
+    --background: #14101A;
+    --surface: #1F1A29;
 
+    --text: #F5F3F7;
+    --text-light: #A9A2B5;
+
+    --border: rgba(245, 243, 247, 0.10);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    --primary-soft: rgba(236, 72, 153, 0.20);
 }
