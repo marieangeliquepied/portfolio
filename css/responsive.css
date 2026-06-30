@@ -9,8 +9,31 @@
         padding-block: var(--space-lg);
     }
 
+    /* Hero empilé : portrait centré au-dessus du texte */
     .hero {
-        min-height: 60vh;
+        min-height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: var(--space-md);
+    }
+
+    .hero__text {
+        flex-basis: auto;
+    }
+
+    .hero__meta,
+    .hero__actions {
+        justify-content: center;
+    }
+
+    .hero__tagline {
+        margin-inline: auto;
+    }
+
+    .hero__avatar {
+        width: clamp(160px, 45vw, 220px);
+        height: clamp(160px, 45vw, 220px);
     }
 }
 
@@ -20,16 +43,6 @@
     /* On masque les liens d'ancrage, on garde les bascules thème/langue */
     .nav__links {
         display: none;
-    }
-
-    /* Avatar un peu plus compact et aligné avec le titre sur petit écran */
-    .hero__intro {
-        gap: var(--space-sm);
-    }
-
-    .hero__avatar {
-        width: 76px;
-        height: 76px;
     }
 
     .hero__actions {
