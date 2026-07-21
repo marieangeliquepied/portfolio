@@ -215,7 +215,9 @@ section > h2::after {
 }
 
 .flag-mq {
-    height: 1.7em;
+    /* dimensions fixées aussi sur le SVG (attributs width/height) pour rester
+       petit même si le CSS n'est pas encore chargé */
+    height: 1.35em;
     width: auto;
     flex: 0 0 auto;
     /* teinte du fin contour de l'île (stroke=currentColor), suit le thème */
