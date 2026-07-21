@@ -215,9 +215,11 @@ section > h2::after {
 }
 
 .flag-mq {
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px var(--border);
+    height: 1.7em;
+    width: auto;
     flex: 0 0 auto;
+    /* teinte du fin contour de l'île (stroke=currentColor), suit le thème */
+    color: var(--text-light);
 }
 
 .hero__tagline {
