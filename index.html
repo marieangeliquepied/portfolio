@@ -73,39 +73,38 @@
         <!-- ============ HERO ============ -->
         <section id="hero" class="hero">
 
-            <div class="hero__intro">
+            <div class="hero__text">
 
-                <!-- Avatar : déposer le fichier dans assets/img/avatar.png.
-                     onerror masque l'image proprement tant qu'elle n'existe pas. -->
-                <img class="hero__avatar"
-                     src="assets/img/avatar.png"
-                     alt="Portrait illustré de Marie-Angélique Pied"
-                     width="132" height="132"
-                     loading="eager"
-                     onerror="this.style.display='none'">
+                <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
+                <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
 
-                <div class="hero__heading">
-                    <h1 data-i18n="hero.title">Marie-Angélique Pied</h1>
-                    <p class="hero__subtitle" data-i18n="hero.subtitle">Développeuse Full Stack</p>
-                    <p class="hero__meta">
-                        <span class="hero__location">
-                            <span aria-hidden="true">📍</span> Martinique
-                        </span>
-                        <span class="hero__clock">
-                            <span aria-hidden="true">🕐</span>
-                            <time id="local-time">--:--</time>
-                            <span data-i18n="hero.localtime">heure locale</span>
-                        </span>
-                    </p>
+                <p class="hero__meta">
+                    <span class="hero__location">
+                        <!-- Carte de la Martinique aux couleurs du drapeau -->
+                        <svg class="flag-mq" viewBox="0 0 83.9 100.0" width="17" height="20" role="img" aria-label="Carte de la Martinique aux couleurs du drapeau" focusable="false"><defs><clipPath id="mq-shape"><path d="M22.3,51.9 18.7,50.8 14.5,45.9 8.9,35.2 10.4,27.4 4.8,20.4 2.9,20.0 0.4,15.7 0.6,9.8 4.5,3.5 9.7,0.8 18.1,0.2 26.3,3.2 34.4,9.2 37.3,8.6 40.0,10.0 39.5,11.5 41.3,11.7 42.1,14.3 45.6,14.6 45.0,16.6 48.3,20.8 49.9,20.9 49.3,21.6 52.2,24.4 54.2,29.4 56.2,25.8 58.9,24.2 61.7,24.9 68.1,20.4 70.9,21.5 71.3,24.9 70.1,25.0 69.1,22.9 66.4,24.3 68.1,25.9 65.9,27.9 67.7,28.7 66.7,30.0 63.7,29.6 63.4,27.9 60.6,26.4 57.2,28.0 56.9,29.1 58.3,29.8 56.9,30.0 56.9,32.2 58.9,33.7 60.7,32.5 59.2,35.3 63.0,33.6 63.0,36.3 65.7,37.2 63.5,39.4 60.1,39.5 60.8,41.4 58.5,40.3 57.2,43.3 60.0,46.6 61.8,46.3 63.4,44.0 64.0,44.8 66.4,44.1 67.0,45.4 67.7,44.0 69.2,44.0 68.6,46.7 68.0,45.9 67.8,47.1 65.2,46.7 64.6,47.6 68.1,49.0 66.8,49.5 67.6,51.1 66.1,51.7 66.0,53.1 68.3,53.1 68.4,54.4 71.8,53.5 70.2,55.0 72.2,57.3 71.3,58.3 74.1,59.8 75.4,58.7 76.5,61.2 75.3,61.7 77.3,61.9 75.1,62.6 75.5,64.1 77.2,63.5 76.0,64.5 77.6,64.4 76.7,66.0 80.7,64.1 78.1,67.9 80.5,70.5 78.3,71.3 80.9,72.1 80.6,73.8 78.8,73.5 78.4,75.8 81.1,75.5 81.1,79.1 82.2,79.2 83.7,82.4 81.0,84.0 83.9,86.4 81.1,88.0 78.9,94.2 76.0,93.3 78.0,96.7 76.6,96.1 74.7,99.4 72.0,100.0 70.2,99.5 67.2,94.9 69.8,90.9 69.0,88.2 70.2,89.3 71.3,88.9 71.2,87.1 72.9,87.5 72.6,84.3 70.5,84.0 66.0,89.0 63.5,86.3 63.8,84.6 62.3,84.1 59.0,86.0 54.6,85.4 52.9,83.8 50.9,84.8 49.7,81.9 48.8,83.8 47.5,82.6 47.5,85.2 45.0,82.6 44.6,84.2 42.1,82.2 39.3,83.0 34.6,87.7 31.7,84.7 29.9,84.7 29.9,80.4 27.7,79.7 28.7,77.1 25.6,76.5 28.3,71.2 30.5,69.5 32.9,69.6 33.6,67.8 35.1,67.4 35.4,65.3 35.5,67.6 38.1,66.5 38.4,67.9 37.0,68.6 40.3,71.0 41.2,70.0 43.1,71.0 44.1,69.5 44.4,70.8 47.1,68.6 46.4,67.6 47.9,67.8 46.3,65.5 43.6,65.6 43.8,62.1 41.0,60.7 42.5,58.5 41.9,57.4 43.1,57.2 41.5,56.9 42.0,55.2 37.9,56.2 38.4,59.1 36.0,57.9 33.8,58.6 34.0,56.7 32.6,58.2 31.7,57.0 27.7,57.9 22.3,51.9 Z"/></clipPath></defs><g clip-path="url(#mq-shape)"><rect x="0" y="0" width="83.9" height="50.0" fill="#009639"/><rect x="0" y="50.0" width="83.9" height="50.0" fill="#111111"/><polygon points="0,0 0,100.0 38.4,50.0" fill="#CE1126"/></g><path d="M22.3,51.9 18.7,50.8 14.5,45.9 8.9,35.2 10.4,27.4 4.8,20.4 2.9,20.0 0.4,15.7 0.6,9.8 4.5,3.5 9.7,0.8 18.1,0.2 26.3,3.2 34.4,9.2 37.3,8.6 40.0,10.0 39.5,11.5 41.3,11.7 42.1,14.3 45.6,14.6 45.0,16.6 48.3,20.8 49.9,20.9 49.3,21.6 52.2,24.4 54.2,29.4 56.2,25.8 58.9,24.2 61.7,24.9 68.1,20.4 70.9,21.5 71.3,24.9 70.1,25.0 69.1,22.9 66.4,24.3 68.1,25.9 65.9,27.9 67.7,28.7 66.7,30.0 63.7,29.6 63.4,27.9 60.6,26.4 57.2,28.0 56.9,29.1 58.3,29.8 56.9,30.0 56.9,32.2 58.9,33.7 60.7,32.5 59.2,35.3 63.0,33.6 63.0,36.3 65.7,37.2 63.5,39.4 60.1,39.5 60.8,41.4 58.5,40.3 57.2,43.3 60.0,46.6 61.8,46.3 63.4,44.0 64.0,44.8 66.4,44.1 67.0,45.4 67.7,44.0 69.2,44.0 68.6,46.7 68.0,45.9 67.8,47.1 65.2,46.7 64.6,47.6 68.1,49.0 66.8,49.5 67.6,51.1 66.1,51.7 66.0,53.1 68.3,53.1 68.4,54.4 71.8,53.5 70.2,55.0 72.2,57.3 71.3,58.3 74.1,59.8 75.4,58.7 76.5,61.2 75.3,61.7 77.3,61.9 75.1,62.6 75.5,64.1 77.2,63.5 76.0,64.5 77.6,64.4 76.7,66.0 80.7,64.1 78.1,67.9 80.5,70.5 78.3,71.3 80.9,72.1 80.6,73.8 78.8,73.5 78.4,75.8 81.1,75.5 81.1,79.1 82.2,79.2 83.7,82.4 81.0,84.0 83.9,86.4 81.1,88.0 78.9,94.2 76.0,93.3 78.0,96.7 76.6,96.1 74.7,99.4 72.0,100.0 70.2,99.5 67.2,94.9 69.8,90.9 69.0,88.2 70.2,89.3 71.3,88.9 71.2,87.1 72.9,87.5 72.6,84.3 70.5,84.0 66.0,89.0 63.5,86.3 63.8,84.6 62.3,84.1 59.0,86.0 54.6,85.4 52.9,83.8 50.9,84.8 49.7,81.9 48.8,83.8 47.5,82.6 47.5,85.2 45.0,82.6 44.6,84.2 42.1,82.2 39.3,83.0 34.6,87.7 31.7,84.7 29.9,84.7 29.9,80.4 27.7,79.7 28.7,77.1 25.6,76.5 28.3,71.2 30.5,69.5 32.9,69.6 33.6,67.8 35.1,67.4 35.4,65.3 35.5,67.6 38.1,66.5 38.4,67.9 37.0,68.6 40.3,71.0 41.2,70.0 43.1,71.0 44.1,69.5 44.4,70.8 47.1,68.6 46.4,67.6 47.9,67.8 46.3,65.5 43.6,65.6 43.8,62.1 41.0,60.7 42.5,58.5 41.9,57.4 43.1,57.2 41.5,56.9 42.0,55.2 37.9,56.2 38.4,59.1 36.0,57.9 33.8,58.6 34.0,56.7 32.6,58.2 31.7,57.0 27.7,57.9 22.3,51.9 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" opacity="0.6"/></svg>
+                        Martinique
+                    </span>
+                </p>
+
+                <p class="hero__tagline" data-i18n="hero.tagline">Je conçois des applications web complètes, du design de l'interface à la logique serveur.</p>
+
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
+                    <a href="assets/cv/CV_DEV_Marie-Angélique%20Pied.pdf" class="btn btn--ghost" download="CV-Marie-Angelique-Pied.pdf" data-i18n="hero.cta_cv">Télécharger mon CV</a>
                 </div>
 
             </div>
 
-            <p class="hero__tagline" data-i18n="hero.tagline">Je conçois des applications web complètes, du design de l'interface à la logique serveur.</p>
-            <div class="hero__actions">
-                <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_projects">Voir mes projets</a>
-                <a href="assets/cv/CV_DEV_Marie-Angélique%20Pied.pdf" class="btn btn--ghost" download="CV-Marie-Angelique-Pied.pdf" data-i18n="hero.cta_cv">Télécharger mon CV</a>
+            <div class="hero__portrait">
+                <!-- Avatar : assets/img/avatar.png — masqué proprement si absent -->
+                <img class="hero__avatar"
+                     src="assets/img/avatar.png"
+                     alt="Portrait illustré de Marie-Angélique Pied"
+                     width="280" height="280"
+                     loading="eager"
+                     onerror="this.style.display='none'">
             </div>
+
         </section>
 
         <!-- ============ À PROPOS ============ -->
