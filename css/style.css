@@ -31,7 +31,7 @@ main > section,
 }
 
 main > section {
-    padding-block: var(--space-xl);
+    padding-block: 2.5rem;
 }
 
 /* Titres de section */
@@ -150,7 +150,6 @@ section > h2::after {
 /* ---------- Hero ---------- */
 
 .hero {
-    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -214,6 +213,11 @@ section > h2::after {
     gap: 0.5rem;
 }
 
+.hero__availability {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
 .flag-mq {
     /* dimensions fixées aussi sur le SVG (attributs width/height) pour rester
        petit même si le CSS n'est pas encore chargé */
@@ -246,6 +250,8 @@ section > h2::after {
     gap: var(--space-sm);
     font-size: 1.1rem;
     color: var(--text-light);
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* ---------- Compétences ---------- */
@@ -359,6 +365,46 @@ section > h2::after {
 
 .project-card__link:hover {
     color: var(--primary-dark);
+}
+
+/* ---------- Formations ---------- */
+
+.education__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-sm);
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+}
+
+.education-item__title {
+    font-size: 1.05rem;
+}
+
+.education-item__meta {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.education-item__date {
+    align-self: flex-start;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    color: var(--primary-dark);
+    background: var(--primary-soft);
 }
 
 /* ---------- Contact ---------- */

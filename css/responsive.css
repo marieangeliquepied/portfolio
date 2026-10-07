@@ -6,7 +6,7 @@
 @media (max-width: 768px) {
 
     main > section {
-        padding-block: var(--space-lg);
+        padding-block: 2rem;
     }
 
     /* Hero empilé : portrait centré au-dessus du texte */
