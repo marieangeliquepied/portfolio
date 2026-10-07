@@ -1,0 +1,60 @@
+/* ============================================================
+   RESPONSIVE — adaptations mobile / tablette
+   ============================================================ */
+
+/* Tablette et en-dessous */
+@media (max-width: 768px) {
+
+    main > section {
+        padding-block: 2rem;
+    }
+
+    /* Hero empilé : portrait centré au-dessus du texte */
+    .hero {
+        min-height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: var(--space-md);
+    }
+
+    .hero__text {
+        flex-basis: auto;
+    }
+
+    .hero__meta,
+    .hero__actions {
+        justify-content: center;
+    }
+
+    .hero__tagline {
+        margin-inline: auto;
+    }
+
+    .hero__avatar {
+        width: clamp(160px, 45vw, 220px);
+        height: clamp(160px, 45vw, 220px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+
+    /* On masque les liens d'ancrage, on garde les bascules thème/langue */
+    .nav__links {
+        display: none;
+    }
+
+    .hero__actions {
+        width: 100%;
+    }
+
+    .hero__actions .btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+}

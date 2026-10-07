@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fleur rose">
+  <g transform="translate(32,32)">
+    <g fill="#EC4899">
+      <path d="M0,-6 C6,-10 9,-20 4,-26 C1.5,-29 -1.5,-29 -4,-26 C-9,-20 -6,-10 0,-6 Z"/>
+      <path d="M0,-6 C6,-10 9,-20 4,-26 C1.5,-29 -1.5,-29 -4,-26 C-9,-20 -6,-10 0,-6 Z" transform="rotate(72)"/>
+      <path d="M0,-6 C6,-10 9,-20 4,-26 C1.5,-29 -1.5,-29 -4,-26 C-9,-20 -6,-10 0,-6 Z" transform="rotate(144)"/>
+      <path d="M0,-6 C6,-10 9,-20 4,-26 C1.5,-29 -1.5,-29 -4,-26 C-9,-20 -6,-10 0,-6 Z" transform="rotate(216)"/>
+      <path d="M0,-6 C6,-10 9,-20 4,-26 C1.5,-29 -1.5,-29 -4,-26 C-9,-20 -6,-10 0,-6 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="6.5" fill="#FBBF24"/>
+    <circle r="2.2" fill="#F59E0B"/>
+  </g>
+</svg>
