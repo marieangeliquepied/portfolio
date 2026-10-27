@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Marie-Angélique Pied | Full Stack Developer",
+    "description": "Portfolio of Marie-Angélique Pied, full stack developer."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Marie-Angélique Pied",
+    "subtitle": "Full Stack Developer",
+    "remote": "Available for remote work",
+    "availability": "Available from December 1, 2026",
+    "tagline": "I build complete web applications, from interface design to server logic.",
+    "cta_projects": "View my projects",
+    "cta_cv": "Download my CV"
+  },
+  "about": {
+    "title": "About",
+    "body1": "Full-stack developer in career transition, currently completing the DWWM certification (level 5). I build applications that are useful in everyday life, from database to deployment: Next.js, React, TypeScript, Tailwind, Supabase.",
+    "body2": "My background in data analysis (SQL, Python) brings me rigor and logic.",
+    "body3": "Highlights: a childcare platform, a reading-tracker app, and the website for the Les Éclaireurs association."
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": { "title": "Front-end" },
+    "backend": { "title": "Back-end & Databases" },
+    "tools": { "title": "Tools & Deployment" }
+  },
+  "projects": {
+    "title": "Projects",
+    "link_demo": "Demo",
+    "timoun": {
+      "status": "In development",
+      "desc": "Platform connecting parents with childcare professionals: search, profiles, booking and messaging, with secure authentication."
+    },
+    "noread": {
+      "status": "Live",
+      "desc": "Installable reading-tracker app (PWA): personal library, progress and statistics, synced in real time."
+    },
+    "trivy": {
+      "status": "In development",
+      "desc": "Travel assistant that helps you pack your suitcase: smart lists based on destination, trip length and weather. Built as a team during a hackathon in my training."
+    },
+    "eclaireurs": {
+      "status": "In development",
+      "desc": "Website for the Les Éclaireurs association, developed during my internship. Not deployed yet: demo coming soon."
+    }
+  },
+  "experience": {
+    "title": "Experience & immersions",
+    "eclaireurs": {
+      "title": "Internship — Web Developer",
+      "status": "Ongoing",
+      "org": "Les Éclaireurs association (reading)",
+      "date": "August 17 – October 23, 2026 · 2 months and 1 week",
+      "desc": "Design and development of the association's website, from database to interface."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "dwwm": {
+      "title": "Web & Mobile Web Developer",
+      "meta": "RNCP professional certification (level 5)",
+      "school": "IMFPA · On-site",
+      "date": "Ongoing · ending November 2026"
+    },
+    "google": {
+      "title": "Google Data Analytics Certificate",
+      "school": "Coursera · Online",
+      "date": "Earned in 2025"
+    },
+    "bachelor": {
+      "title": "Bachelor's in HR Management",
+      "school": "ESTC Marseille · Online",
+      "date": "Earned in 2019"
+    },
+    "bts": {
+      "title": "BTS Management Assistant",
+      "school": "Joseph Gaillard Technical High School · On-site",
+      "date": "Earned in 2017"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "A project, an opportunity, or simply want to chat? Drop me a line — I'll be happy to reply."
+  }
+}
