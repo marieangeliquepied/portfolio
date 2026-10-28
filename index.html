@@ -33,6 +33,22 @@
         })();
     </script>
 
+    <!-- Active les animations d'apparition avant le rendu (sauf prefers-reduced-motion).
+         Filet de sécurité : si le script d'animation ne s'initialise pas, on révèle tout. -->
+    <script>
+        (function () {
+            try {
+                if (window.matchMedia &&
+                    window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+                var root = document.documentElement;
+                root.classList.add("anim");
+                window.setTimeout(function () {
+                    if (!root.classList.contains("anim-ready")) root.classList.remove("anim");
+                }, 2500);
+            } catch (e) {}
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -55,9 +71,8 @@
 
             <div class="nav__actions">
 
-                <!-- Bascule de langue FR / EN — masquée tant que le bilingue
-                     n'est pas câblé (à réactiver à l'étape 4 : retirer "hidden") -->
-                <button type="button" id="lang-toggle" class="btn-icon" aria-label="Changer de langue" hidden>
+                <!-- Bascule de langue FR / EN -->
+                <button type="button" id="lang-toggle" class="btn-icon" aria-label="Switch to English">
                     <span data-lang-label>EN</span>
                 </button>
 

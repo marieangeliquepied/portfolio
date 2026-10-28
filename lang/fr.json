@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Marie-Angélique Pied | Développeuse Full Stack",
+    "description": "Portfolio de Marie-Angélique Pied, développeuse full stack."
+  },
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Stages",
+    "education": "Formations",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Marie-Angélique Pied",
+    "subtitle": "Développeuse Full Stack",
+    "remote": "Disponible en remote",
+    "availability": "Disponible dès le 1er décembre 2026",
+    "tagline": "Je conçois des applications web complètes, du design de l'interface à la logique serveur.",
+    "cta_projects": "Voir mes projets",
+    "cta_cv": "Télécharger mon CV"
+  },
+  "about": {
+    "title": "À propos",
+    "body1": "Développeuse full-stack en reconversion, titre DWWM (niveau 5) en cours de validation. Je conçois des applications utiles au quotidien, de la base de données au déploiement : Next.js, React, TypeScript, Tailwind, Supabase.",
+    "body2": "Mon passé en analyse de données (SQL, Python) m'apporte rigueur et logique.",
+    "body3": "Réalisations : plateforme de garde d'enfants, app suivi de lecture, site web de l'association Les Éclaireurs."
+  },
+  "skills": {
+    "title": "Compétences",
+    "frontend": { "title": "Front-end" },
+    "backend": { "title": "Back-end & Bases de données" },
+    "tools": { "title": "Outils & Déploiement" }
+  },
+  "projects": {
+    "title": "Projets",
+    "link_demo": "Démo",
+    "timoun": {
+      "status": "En développement",
+      "desc": "Plateforme de mise en relation entre parents et professionnels de la garde d'enfants : recherche, profils, réservation et messagerie, avec authentification sécurisée."
+    },
+    "noread": {
+      "status": "Déployé",
+      "desc": "Application de suivi de lecture installable (PWA) : bibliothèque personnelle, progression et statistiques, synchronisées en temps réel."
+    },
+    "trivy": {
+      "status": "En développement",
+      "desc": "Assistant de voyage qui aide à préparer sa valise : listes intelligentes selon la destination, la durée du séjour et la météo. Réalisé en équipe lors d'un hackathon pendant ma formation."
+    },
+    "eclaireurs": {
+      "status": "En développement",
+      "desc": "Site web de l'association Les Éclaireurs, développé dans le cadre de mon stage. Pas encore déployé : démo à venir."
+    }
+  },
+  "experience": {
+    "title": "Stages & immersions",
+    "eclaireurs": {
+      "title": "Stage — Développeuse web",
+      "status": "En cours",
+      "org": "Association Les Éclaireurs (lecture)",
+      "date": "17 août – 23 octobre 2026 · 2 mois et 1 semaine",
+      "desc": "Conception et développement du site web de l'association, de la base de données à l'interface."
+    }
+  },
+  "education": {
+    "title": "Formations",
+    "dwwm": {
+      "title": "Développeuse Web & Web Mobile",
+      "meta": "Titre professionnel RNCP (niveau 5)",
+      "school": "IMFPA · Présentiel",
+      "date": "En cours · fin en novembre 2026"
+    },
+    "google": {
+      "title": "Certificat Google Data Analytics",
+      "school": "Coursera · Distanciel",
+      "date": "Obtenu en 2025"
+    },
+    "bachelor": {
+      "title": "Bachelor Gestionnaire RH",
+      "school": "ESTC Marseille · Distanciel",
+      "date": "Obtenu en 2019"
+    },
+    "bts": {
+      "title": "BTS Assistant Manager",
+      "school": "Lycée technique Joseph Gaillard · Présentiel",
+      "date": "Obtenu en 2017"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Un projet, une opportunité, ou simplement l'envie d'échanger ? Écrivez-moi, je réponds avec plaisir."
+  }
+}
