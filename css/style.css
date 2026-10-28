@@ -523,7 +523,10 @@ section > h2::after {
     will-change: opacity, transform;
 }
 
+/* !important : certaines règles de masquage ciblent un élément (ex. « h2 »)
+   et sont donc plus spécifiques ; on garantit ici qu'un élément révélé
+   redevient toujours visible. */
 .anim .is-visible {
-    opacity: 1;
-    transform: none;
+    opacity: 1 !important;
+    transform: none !important;
 }
