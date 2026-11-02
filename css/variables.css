@@ -4,9 +4,16 @@
 
 :root {
 
-    /* --- Palette rose (commune aux deux thèmes) --- */
+    /* --- Palette rose (commune aux deux thèmes) ---
+       --primary        : rose vif, usages DÉCORATIFS uniquement (anneaux,
+                          dégradés, focus, barres) — contraste insuffisant pour du texte.
+       --primary-strong : rose accessible pour le TEXTE et l'UI (>= 4.5:1).
+       --primary-dark   : fond du bouton primaire (texte blanc, 6.04:1).
+       --primary-darker : survol du bouton primaire (7.88:1). */
     --primary: #EC4899;
-    --primary-dark: #DB2777;
+    --primary-strong: #BE185D;
+    --primary-dark: #BE185D;
+    --primary-darker: #9D174D;
     --primary-soft: rgba(236, 72, 153, 0.12);
 
     /* --- Thème CLAIR (par défaut) --- */
@@ -47,5 +54,7 @@
     --border: rgba(245, 243, 247, 0.10);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 
+    /* Sur fond sombre, le texte rose doit être CLAIR pour rester lisible (>= 4.5:1) */
+    --primary-strong: #F472B6;
     --primary-soft: rgba(236, 72, 153, 0.20);
 }
